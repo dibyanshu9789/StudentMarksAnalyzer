@@ -13,8 +13,6 @@ A beginner-friendly, menu-driven Java project. The complete program is in **one 
 - `if-else`, `for` loop and `do-while` loop
 - Methods
 
-No `private`, `protected`, abstract classes, ArrayList, database, or external libraries are used.
-
 ## Features
 1. Add a student (ID, name and marks)
 2. Display all students
