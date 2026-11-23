@@ -65,7 +65,7 @@ public class StudentMarksAnalyzer {
                       System.out.print("Enter marks (0-100): ");
                       marks = sc.nextInt();
                       if(marks>100)
-                          System.out.println("Invalid !! Marks more than 100);
+                          System.out.println("Invalid !! Marks more than 100");
                     } while(marks>100);
 
                     if (marks < 0 || marks > 100) {
