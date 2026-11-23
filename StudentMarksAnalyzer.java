@@ -60,10 +60,13 @@ public class StudentMarksAnalyzer {
 
                     System.out.print("Enter student name: ");
                     String name = sc.nextLine();
-
-                    System.out.print("Enter marks (0-100): ");
-                    int marks = sc.nextInt();
-                    sc.nextLine();
+                    int marks;
+                    do {
+                      System.out.print("Enter marks (0-100): ");
+                      marks = sc.nextInt();
+                      if(marks>100)
+                          System.out.println("Invalid !! Marks more than 100);
+                    } while(marks>100);
 
                     if (marks < 0 || marks > 100) {
                         System.out.println("Invalid marks. Enter marks between 0 and 100.");
