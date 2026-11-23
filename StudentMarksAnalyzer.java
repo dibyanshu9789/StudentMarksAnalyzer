@@ -64,17 +64,12 @@ public class StudentMarksAnalyzer {
                     do {
                       System.out.print("Enter marks (0-100): ");
                       marks = sc.nextInt();
-                      if(marks>100)
-                          System.out.println("Invalid !! Marks more than 100");
+                      if(marks>100 || marks<0)
+                          System.out.println("Invalid marks. Enter marks between 0 and 100.");
                     } while(marks>100);
-
-                    if (marks < 0 || marks > 100) {
-                        System.out.println("Invalid marks. Enter marks between 0 and 100.");
-                    } else {
-                        students[count] = new Student(id, name, marks);
-                        count++;
-                        System.out.println("Student added successfully!");
-                    }
+                    students[count] = new Student(id, name, marks);
+                    count++;
+                     System.out.println("Student added successfully!");
                 }
 
             } else if (choice == 2) {
