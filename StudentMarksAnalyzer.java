@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-// Parent class
 class Person {
     public String name;
 
@@ -9,7 +8,6 @@ class Person {
     }
 }
 
-// Student inherits the name from Person
 class Student extends Person {
     public String id;
     public int marks;
@@ -28,14 +26,11 @@ class Student extends Person {
     }
 }
 
-// Main class
 public class StudentMarksAnalyzer {
 
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-
-        // Array to store student objects
         Student[] students = new Student[50];
 
         int count = 0;
